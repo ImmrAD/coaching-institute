@@ -1,45 +1,53 @@
 "use client";
+
 import Counter from "@/components/Counter";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Hero() {
 	return (
-		<section className="relative w-full bg-white pt-28 pb-24 px-6 lg:px-20 overflow-hidden">
-            <div className="absolute -top-20 -right-20 w-72 h-72 bg-[#ffc926]/20 rounded-full blur-3xl"></div>
-<div className="absolute bottom-0 -left-20 w-72 h-72 bg-[#D23D2D]/10 rounded-full blur-3xl"></div>
+		<section className="relative w-full bg-white pt-20 md:pt-28 pb-20 md:pb-24 px-6 lg:px-20 overflow-hidden">
 
-			<div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+			{/* Background Glows */}
+			<div className="absolute -top-20 -right-20 w-72 h-72 bg-[#ffc926]/20 rounded-full blur-3xl"></div>
+			<div className="absolute bottom-0 -left-20 w-72 h-72 bg-[#D23D2D]/10 rounded-full blur-3xl"></div>
+
+			<div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-12 items-center">
 
 				{/* Left Content */}
 				<motion.div
-					initial={{ opacity: 0, x: -50 }}
+					initial={{ opacity: 0, x: -40 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.8 }}
 				>
+
+					{/* SEO Friendly H1 */}
 					<motion.h1
-						className="text-4xl lg:text-6xl font-extrabold text-[#6E433D] leading-tight"
+						className="text-3xl md:text-4xl lg:text-6xl font-extrabold text-[#6E433D] leading-tight"
 						initial={{ opacity: 0, y: 30 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2, duration: 0.6 }}
 					>
-						Building Strong Foundations.
-						<br />
-						<span className="text-[#D23D2D]">
-							Creating Future Doctors & Engineers.
+						JEE & NEET Coaching in PCMC
+						<span className="block text-[#D23D2D] mt-2">
+							That Builds Strong Foundations.
 						</span>
 					</motion.h1>
 
+					{/* Supporting Paragraph with Natural Keyword Distribution */}
 					<motion.p
-						className="mt-6 text-lg text-gray-600 max-w-xl"
+						className="mt-6 text-base md:text-lg text-gray-600 max-w-xl leading-relaxed"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.4, duration: 0.6 }}
 					>
-						Personal Mentoring • Weekly Tests • Doubt Solving • Scholarship Programs  
-						Designed for CBSE & Maharashtra Board students from 8th to 12th.
+						Durga & P K Classes offers structured preparation for JEE,
+						NEET, and MHT CET classes in PCMC, along with
+						personal mentoring for 8th to 10th coaching students from
+						CBSE and Maharashtra Board.
 					</motion.p>
 
+					{/* CTA Buttons */}
 					<motion.div
 						className="mt-8 flex flex-wrap gap-4"
 						initial={{ opacity: 0, y: 20 }}
@@ -63,43 +71,49 @@ export default function Hero() {
 					</motion.div>
 
 					{/* Stats */}
-					<div className="mt-12 flex gap-10">
-                        <div>
-                            <h3 className="text-2xl font-bold text-[#D23D2D]">
-                                <Counter to={10} />+
-                            </h3>
-                            <p className="text-sm text-gray-500">Teaching Excellence</p>
-                        </div>
+					<div className="mt-10 md:mt-12 flex gap-8 md:gap-10 flex-wrap">
+						<div>
+							<h2 className="text-xl md:text-2xl font-bold text-[#D23D2D]">
+								<Counter to={10} />+
+							</h2>
+							<p className="text-sm text-gray-500">
+								Years of Teaching Excellence
+							</p>
+						</div>
 
-                        <div>
-                            <h3 className="text-2xl font-bold text-[#D23D2D]">
-                                <Counter to={500} />+
-                            </h3>
-                            <p className="text-sm text-gray-500">Successful Students</p>
-                        </div>
+						<div>
+							<h2 className="text-xl md:text-2xl font-bold text-[#D23D2D]">
+								<Counter to={500} />+
+							</h2>
+							<p className="text-sm text-gray-500">
+								Successful Students
+							</p>
+						</div>
 
-                        <div>
-                            <h3 className="text-2xl font-bold text-[#D23D2D]">
-                                <Counter to={95} />%
-                            </h3>
-                            <p className="text-sm text-gray-500">Result Success Rate</p>
-                        </div>
-                    </div>
+						<div>
+							<h2 className="text-xl md:text-2xl font-bold text-[#D23D2D]">
+								<Counter to={95} />%
+							</h2>
+							<p className="text-sm text-gray-500">
+								Consistent Result Success
+							</p>
+						</div>
+					</div>
 
 				</motion.div>
 
 				{/* Right Image */}
 				<motion.div
-					initial={{ opacity: 0, x: 50 }}
+					initial={{ opacity: 0, x: 40 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.8 }}
 					className="relative"
 				>
 					<motion.img
 						src="/hero.jpg"
-						alt="Students studying"
-						className="rounded-xl shadow-xl"
-						animate={{ y: [0, -10, 0] }}
+						alt="Students preparing for JEE and NEET exams in PCMC"
+						className="rounded-xl shadow-xl w-full h-auto"
+						animate={{ y: [0, -8, 0] }}
 						transition={{
 							duration: 4,
 							repeat: Infinity,
@@ -108,14 +122,15 @@ export default function Hero() {
 					/>
 
 					<motion.div
-						className="absolute -bottom-6 -left-6 bg-[#ffc926] text-[#6E433D] px-6 py-4 rounded-lg shadow-lg font-semibold"
+						className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-[#ffc926] text-[#6E433D] px-4 md:px-6 py-3 md:py-4 rounded-lg shadow-lg font-semibold text-sm md:text-base"
 						initial={{ scale: 0 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 1, duration: 0.5 }}
 					>
-						Admissions Open Now!
+						Admissions Open in PCMC
 					</motion.div>
 				</motion.div>
+
 			</div>
 		</section>
 	);
