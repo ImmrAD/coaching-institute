@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
 const fadeUp = {
 	initial: { opacity: 0, y: 40 },
 	whileInView: { opacity: 1, y: 0 },
@@ -140,6 +140,26 @@ export default function MhtCetPage() {
 
 				</div>
 			</section>
+
+			<section className="py-20 px-6 lg:px-20 bg-[#f9f9f9] text-center">
+	<h2 className="text-3xl font-bold text-[#6E433D]">
+		CET & NEET Crash Course – 2026
+	</h2>
+
+	<p className="mt-4 text-gray-600">
+		Batch starting from 26th February 2026 in PCMC.
+	</p>
+
+	<div className="mt-10 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl">
+		<Image
+			src="/crash-course-2026.jpg"
+			alt="CET NEET Crash Course PCMC"
+			width={1200}
+			height={900}
+			className="w-full h-auto"
+		/>
+	</div>
+</section>
 
 
 			{/* ================= FINAL CTA ================= */}

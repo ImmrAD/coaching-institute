@@ -157,6 +157,7 @@ export default function CoursesPage() {
 					because every goal demands a different strategy.
 				</motion.p>
 			</section>
+			
 
 			{/* COURSES */}
 			<div className="space-y-24 pb-32">
