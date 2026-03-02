@@ -4,7 +4,6 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import WeUnderstandYou from "@/components/WeUnderstandYou";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import FinalDecisionSection from "@/components/FinalDecisionSection";
-import PathSelector from "@/components/PathSelector";
 import FloatingCTA from "@/components/FloatingCTA";
 import FAQSection from "@/components/FAQSection";
 
@@ -42,7 +41,6 @@ export default function Home() {
       <WhyChooseUs />
       <WeUnderstandYou />
       <VideoTestimonials />
-      <PathSelector />
       <FAQSection />
       <FinalDecisionSection />
       <FloatingCTA />

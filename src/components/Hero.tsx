@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import Counter from "@/components/Counter";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -49,32 +49,40 @@ export default function Hero() {
 
 					{/* CTA Buttons */}
 					<motion.div
-						className="mt-8 flex flex-wrap gap-4"
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ delay: 0.6, duration: 0.6 }}
-					>
-						<motion.div whileHover={{ scale: 1.05 }}>
-							<Button className="bg-[#D23D2D] text-white hover:bg-[#ffc926] hover:text-[#6E433D] transition-all duration-300">
-								Book Free Demo
-							</Button>
-						</motion.div>
+	className="mt-8 flex flex-wrap gap-4"
+	initial={{ opacity: 0, y: 20 }}
+	animate={{ opacity: 1, y: 0 }}
+	transition={{ delay: 0.6, duration: 0.6 }}
+>
 
-						<motion.div whileHover={{ scale: 1.05 }}>
-							<Button
-								variant="outline"
-								className="border-2 border-[#D23D2D] text-[#D23D2D] hover:bg-[#D23D2D] hover:text-white transition-all duration-300"
-							>
-								View Courses
-							</Button>
-						</motion.div>
-					</motion.div>
+	{/* Book Free Demo */}
+	<motion.div whileHover={{ scale: 1.05 }}>
+		<Link href="/contact">
+			<Button className="bg-[#D23D2D] text-white hover:bg-[#b53226] transition-all duration-300 shadow-lg hover:shadow-xl">
+				Book Free Demo
+			</Button>
+		</Link>
+	</motion.div>
+
+	{/* View Courses */}
+	<motion.div whileHover={{ scale: 1.05 }}>
+		<Link href="/courses">
+			<Button
+				variant="outline"
+				className="border-2 border-[#D23D2D] text-[#D23D2D] hover:bg-[#D23D2D] hover:text-white transition-all duration-300"
+			>
+				View Courses
+			</Button>
+		</Link>
+	</motion.div>
+
+</motion.div>
 
 					{/* Stats */}
 					<div className="mt-10 md:mt-12 flex gap-8 md:gap-10 flex-wrap">
 						<div>
 							<h2 className="text-xl md:text-2xl font-bold text-[#D23D2D]">
-								<Counter to={10} />+
+								<Counter to={26} />+
 							</h2>
 							<p className="text-sm text-gray-500">
 								Years of Teaching Excellence
@@ -83,7 +91,7 @@ export default function Hero() {
 
 						<div>
 							<h2 className="text-xl md:text-2xl font-bold text-[#D23D2D]">
-								<Counter to={500} />+
+								<Counter to={1000} />+
 							</h2>
 							<p className="text-sm text-gray-500">
 								Successful Students

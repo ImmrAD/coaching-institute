@@ -23,7 +23,7 @@ export default function ResultsPage() {
 			<section className="pb-24 px-6 lg:px-20">
 				<div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
 					<Image
-						src="/results-jee-2026.jpg"
+						src="/jee-results.jpeg"
 						alt="JEE Mains 2026 Results Durga PK Classes PCMC"
 						width={1200}
 						height={800}
