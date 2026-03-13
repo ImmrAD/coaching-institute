@@ -14,7 +14,7 @@ export function Header() {
 		{ label: 'Home', href: '/' },
 		{ label: 'Courses', href: '/courses' },
 		{ label: 'Results', href: '/results' },
-		{ label: 'Faculty', href: '/faculty' },
+		{ label: 'Founder', href: '/founder' },
 		{ label: 'Contact', href: '/contact' },
 	];
 
@@ -77,7 +77,7 @@ export function Header() {
 							</a>
 						))}
 
-						<Button
+						{/* <Button
 							variant="outline"
 							className="border-[#D23D2D] text-[#D23D2D] hover:bg-[#D23D2D] hover:text-white transition-all duration-300"
 						>
@@ -86,7 +86,7 @@ export function Header() {
 
 						<Button className="bg-[#D23D2D] text-white hover:bg-[#ffc926] hover:text-[#6E433D] transition-all duration-300">
 							Book Demo
-						</Button>
+						</Button> */}
 					</div>
 
 					{/* Mobile Toggle */}

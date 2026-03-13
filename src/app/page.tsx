@@ -40,7 +40,7 @@ export default function Home() {
       <Hero />
       <WhyChooseUs />
       <WeUnderstandYou />
-      <VideoTestimonials />
+      {/* <VideoTestimonials /> */}
       <FAQSection />
       <FinalDecisionSection />
       <FloatingCTA />
