@@ -118,7 +118,7 @@ export default function Hero() {
 					className="relative"
 				>
 					<motion.img
-						src="/hero.jpg"
+						src="/jee-results.jpg"
 						alt="Students preparing for JEE and NEET exams in PCMC"
 						className="rounded-xl shadow-xl w-full h-auto"
 						animate={{ y: [0, -8, 0] }}

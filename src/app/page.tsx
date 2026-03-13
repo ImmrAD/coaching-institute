@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import WeUnderstandYou from "@/components/WeUnderstandYou";
-import VideoTestimonials from "@/components/VideoTestimonials";
+//import VideoTestimonials from "@/components/VideoTestimonials";
 import FinalDecisionSection from "@/components/FinalDecisionSection";
 import FloatingCTA from "@/components/FloatingCTA";
 import FAQSection from "@/components/FAQSection";
